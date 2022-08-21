@@ -27,7 +27,7 @@ export class PolygonBox extends Box {
     this.normals[3].set(-1, 0)
     this.centorid.setZero()
 
-    /** 根据质心和 */
+    /** 根据质心和角度旋转 */
     if (center) {
       this.centorid.copy(center)
 

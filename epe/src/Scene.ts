@@ -18,6 +18,10 @@ export class Scene {
   render() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
 
+    /**
+     * TODO: collide
+     */
+
     this.rigidBodys.forEach(item => {
       if (!item.pin) {
         item.y += 0.5
